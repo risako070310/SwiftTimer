@@ -15,6 +15,7 @@
 		B4C9F5742431DB0300A44222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C9F5722431DB0300A44222 /* LaunchScreen.storyboard */; };
 		B4C9F57F2431DB0300A44222 /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C9F57E2431DB0300A44222 /* TimerTests.swift */; };
 		B4C9F58A2431DB0300A44222 /* TimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C9F5892431DB0300A44222 /* TimerUITests.swift */; };
+		B4C9F5D6243203C400A44222 /* AnimationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C9F5D5243203C400A44222 /* AnimationButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B4C9F5852431DB0300A44222 /* TimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C9F5892431DB0300A44222 /* TimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerUITests.swift; sourceTree = "<group>"; };
 		B4C9F58B2431DB0300A44222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4C9F5D5243203C400A44222 /* AnimationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				B4C9F5702431DB0300A44222 /* Assets.xcassets */,
 				B4C9F5722431DB0300A44222 /* LaunchScreen.storyboard */,
 				B4C9F5752431DB0300A44222 /* Info.plist */,
+				B4C9F5D5243203C400A44222 /* AnimationButton.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C9F5D6243203C400A44222 /* AnimationButton.swift in Sources */,
 				B4C9F56C2431DB0000A44222 /* ViewController.swift in Sources */,
 				B4C9F5682431DB0000A44222 /* AppDelegate.swift in Sources */,
 				B4C9F56A2431DB0000A44222 /* SceneDelegate.swift in Sources */,

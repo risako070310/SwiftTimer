@@ -1,24 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pkL-w5-FYe">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="ZTM-Xw-bEx">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="pkL-w5-FYe" customClass="ViewController" customModule="Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cwL-zS-U14">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUP-3g-Ahz" customClass="AnimationButton" customModule="Timer" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="374" width="180" height="180"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="RSN-Gm-vQM"/>
+                                    <constraint firstAttribute="width" constant="180" id="yRG-KB-keR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="22"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="start" destination="pkL-w5-FYe" eventType="touchUpInside" id="uZT-qh-22w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJ2-f2-Wax" customClass="AnimationButton" customModule="Timer" customModuleProvider="target">
+                                <rect key="frame" x="77.5" y="209" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.17388528995146199" green="0.52718933371710908" blue="0.99291235209999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="PMG-1q-Ao6"/>
+                                    <constraint firstAttribute="height" constant="100" id="UCp-Ls-YS9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="22"/>
+                                <state key="normal" title="Minute">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="minute" destination="pkL-w5-FYe" eventType="touchUpInside" id="u3H-9W-bxF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfA-lB-6n4" customClass="AnimationButton" customModule="Timer" customModuleProvider="target">
+                                <rect key="frame" x="197.5" y="209" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.17388529" green="0.52718933369999998" blue="0.99291235209999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="SQW-dt-yTW"/>
+                                    <constraint firstAttribute="height" constant="100" id="xtF-JO-kBI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="22"/>
+                                <color key="tintColor" red="0.17388529" green="0.52718933369999998" blue="0.99291235209999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Second">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="second" destination="pkL-w5-FYe" eventType="touchUpInside" id="tG9-ZV-UeU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Co3-aU-qXH" customClass="AnimationButton" customModule="Timer" customModuleProvider="target">
+                                <rect key="frame" x="157.5" y="452" width="180" height="180"/>
+                                <color key="backgroundColor" red="0.30260798134835382" green="0.99291235209999995" blue="0.92066175049262999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="KcF-Oh-9bv"/>
+                                    <constraint firstAttribute="width" constant="180" id="aJV-hB-FiR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="22"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset" destination="pkL-w5-FYe" eventType="touchUpInside" id="t15-0T-Eu9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyZ-hx-19u">
+                                <rect key="frame" x="144.5" y="107" width="86" height="48"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oyZ-hx-19u" firstAttribute="centerX" secondItem="cwL-zS-U14" secondAttribute="centerX" id="8AV-6d-2eF"/>
+                            <constraint firstItem="Co3-aU-qXH" firstAttribute="centerX" secondItem="cwL-zS-U14" secondAttribute="centerX" constant="60" id="PCJ-Ut-UYX"/>
+                            <constraint firstItem="sfA-lB-6n4" firstAttribute="top" secondItem="oyZ-hx-19u" secondAttribute="bottom" constant="54" id="XGg-3s-GWG"/>
+                            <constraint firstItem="oSY-9a-d7w" firstAttribute="bottom" secondItem="Co3-aU-qXH" secondAttribute="bottom" constant="35" id="Yma-RU-4Th"/>
+                            <constraint firstItem="oyZ-hx-19u" firstAttribute="top" secondItem="oSY-9a-d7w" secondAttribute="top" constant="107" id="Zwe-GO-VeK"/>
+                            <constraint firstItem="VJ2-f2-Wax" firstAttribute="centerX" secondItem="cwL-zS-U14" secondAttribute="centerX" constant="-60" id="hUp-ai-QG7"/>
+                            <constraint firstItem="sfA-lB-6n4" firstAttribute="centerX" secondItem="cwL-zS-U14" secondAttribute="centerX" constant="60" id="nzR-Hm-E5K"/>
+                            <constraint firstItem="VJ2-f2-Wax" firstAttribute="top" secondItem="oyZ-hx-19u" secondAttribute="bottom" constant="54" id="qVX-fw-gCo"/>
+                            <constraint firstItem="ZUP-3g-Ahz" firstAttribute="centerX" secondItem="cwL-zS-U14" secondAttribute="centerX" constant="-60" id="whr-Ib-QIo"/>
+                            <constraint firstItem="oSY-9a-d7w" firstAttribute="bottom" secondItem="ZUP-3g-Ahz" secondAttribute="bottom" constant="113" id="zhc-aH-h88"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oSY-9a-d7w"/>
                     </view>
+                    <connections>
+                        <outlet property="minuteButton" destination="VJ2-f2-Wax" id="EIa-vT-q9K"/>
+                        <outlet property="resetButton" destination="Co3-aU-qXH" id="WQi-7s-9X8"/>
+                        <outlet property="secondButton" destination="sfA-lB-6n4" id="mkF-EQ-1zn"/>
+                        <outlet property="startButton" destination="ZUP-3g-Ahz" id="lrb-lg-SLD"/>
+                        <outlet property="timeLabel" destination="oyZ-hx-19u" id="6tE-gi-la3"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDE-hb-WmU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-58" y="4"/>
         </scene>
     </scenes>
 </document>
